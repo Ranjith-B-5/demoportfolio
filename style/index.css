@@ -1,0 +1,231 @@
+*
+{
+    margin: 0px 0px 0px 0px;
+
+}
+
+
+
+p{
+    text-align: center;
+}
+
+.topbg
+{
+    height: 90vh;
+    width: 100vw;
+    max-width: 100%;
+    background-image: url("/image/topbgg.jpg.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size:cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+
+.menu
+{
+    
+    color:azure;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: transform 0.5s ease-in-out;
+}
+
+.navbar
+{
+    display: flex;
+    flex-direction: row;
+    justify-content:end;
+
+}
+
+
+.nav
+{
+    
+    z-index: 1;
+    position: fixed;
+    width: 50vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;;
+    visibility: visible;
+}
+
+.nav1
+{
+    z-index: 1;
+    position: fixed;
+    width: 50vw;
+    height: 10vh;
+    padding-top: 20px;
+    padding-left: 30px;
+    left: 0%;
+    top: 0%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+
+.stickybar
+{
+    height: 10vh;
+    width: 100vw;
+    background-color: #035397;
+    position:sticky;
+    top: 0;
+    max-width: 100%;
+    box-shadow: inset;
+    
+}
+
+.demo
+{
+    height: auto;
+    padding-bottom: 20px;
+    width: 100vw;
+    background-color:#203239;
+    max-width: 100%;
+}
+
+.profile
+{
+    height: 30vh;
+    display: block;
+    margin-left:auto ;
+    margin-right: auto;
+    margin-top: 0%;
+    padding-top: 10vh;
+}
+
+.def
+{
+    color: azure;
+    margin-top: 30px;
+    margin-left: 25vw;
+    margin-right: 25vw;
+    line-height: 25px;
+    text-align: center;
+    font-family:sans-serif;
+    margin-bottom: 25px;;
+
+}
+
+.work
+{
+    width: 300px;
+    height:300px;
+    margin: auto;
+    margin-top:25px;
+    background-color: azure;
+    box-shadow: 5px 5px grey;
+    border-radius: 50px;
+   
+}
+
+.bottom
+{
+    height:30vh;
+    width:100%;
+    background-color: #035397;
+    margin-top: 0;
+    font-size: 1.5em;
+    color: aliceblue;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.icons
+{
+    display:flex;
+    justify-content: center;
+    margin-top: 25px;
+    
+}
+
+i
+{
+    padding: 10px 10px 10px 10px;
+}
+
+h4{
+    font-size:small;
+    margin-top: 10vh;
+    text-align: center;
+
+}
+
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+
+.menu:hover{
+transform: scale(0.8);
+
+
+}
+
+
+.work:hover
+{
+    animation-name: workani;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+}
+
+.ham
+{
+    width: 65px;
+    height:35px;
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    border-radius: 50px;
+    text-align: center;
+    background-color: azure;
+    font-size: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    visibility: hidden;
+    position: fixed;
+    z-index: 2;
+}
+
+
+
+
+.grids
+{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto auto;
+
+}
+
+@media screen and (max-width:600px){
+
+    .nav{visibility: hidden;}
+    .ham{visibility: visible;}
+    
+}
+
+@media screen and (max-width:720px){
+
+    .grids{grid-template-columns: auto;}
+
+}
+
+@media screen and (max-width:300px){
+
+.work{width: 150px;
+height: 150px;}
+    
+}
+
+@media screen and (min-width:721px) and (max-width:1000px){
+
+    .grids{grid-template-columns: auto auto;}
+    }
